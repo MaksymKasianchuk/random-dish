@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
     justify-content: space-between; 
     max-width: 500px;
     border-radius: ${props => props.theme.radii.wrapers}px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center; 
+        padding: 30px 15px;
+    }
 `;
 export const RandomizerWrap = styled.div`
     display: flex;
@@ -23,6 +28,10 @@ export const DishWrap = styled.div`
     font-size: 30px;
     font-weight: 600;
     color: ${props => props.theme.colors.textColor};
+    @media screen and (max-width: 768px) {
+        margin-top: 50px;
+        min-height: 70px;
+    }
 `;
 export const DishesList = styled.ul`
     display: flex;
@@ -34,9 +43,18 @@ export const DishesList = styled.ul`
     min-width: 250px;
     color:  ${props => props.theme.colors.lightText};
     list-style:none;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+    }
 `;
 export const DishesListItem = styled.li`
     &:not(:last-child){
         margin-bottom: 10px;
+    }
+    @media screen and (max-width: 768px) {
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
     }
 `;
