@@ -10,7 +10,7 @@ const Randomizer = () => {
         const randomIndex = Math.floor(Math.random() * dishesArr.length);
         setDish(dishesArr[randomIndex]);
     }
-
+ 
     return (
         <Wrapper>
             <DishesList>
